@@ -1,0 +1,7 @@
+Model,Stage,Search Method,Best Params,Best CV F1,Test Accuracy,Test Precision,Test Recall,Test F1-Score,Test ROC-AUC
+Logistic Regression,Baseline (Default),None,"C=1.0, penalty='l2', solver='lbfgs'",0.9808,0.9825,0.9861,0.9861,0.9861,0.9957
+Logistic Regression,Tuned,GridSearchCV,"{'C': 0.5, 'penalty': 'l2', 'solver': 'liblinear'}",0.9842,0.9825,0.9861,0.9861,0.9861,0.9967
+Support Vector Machine,Baseline (Default),None,"C=1.0, gamma='scale', kernel='rbf'",0.9773,0.9825,0.9861,0.9861,0.9861,0.9964
+Support Vector Machine,Tuned,GridSearchCV,"{'C': 5.0, 'gamma': 'scale', 'kernel': 'rbf'}",0.9808,0.9825,0.9861,0.9861,0.9861,0.9974
+Random Forest,Baseline (Default),None,"n_estimators=100, max_depth=None, max_features='sqrt'",0.9699,0.9561,0.9589,0.9722,0.9655,0.9942
+Random Forest,Tuned,RandomizedSearchCV,"{'max_depth': 8, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 6, 'n_estimators': 210}",0.9702,0.9474,0.9583,0.9583,0.9583,0.9931
